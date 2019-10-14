@@ -3,8 +3,14 @@ package piggybank;
 public class Nickel extends Money {
     public String name = "Nickel";
     private double value = .05;
-    private int quantity = 1;
     private double total;
+
+    public Nickel(int quantity){
+        this.quantity = quantity;
+    }
+    public Nickel(){
+        this.quantity = 1;
+    }
 
     @Override
     public String getName()
