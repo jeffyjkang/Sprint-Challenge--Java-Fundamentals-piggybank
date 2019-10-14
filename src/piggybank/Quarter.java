@@ -3,8 +3,14 @@ package piggybank;
 public class Quarter extends Money {
     private String name = "Quarter";
     private double value = .25;
-    private int quantity = 1;
     private double total;
+
+    public Quarter(int quantity){
+        this.quantity = quantity;
+    }
+    public Quarter() {
+        this.quantity = 1;
+    }
 
     @Override
     public String getName()
